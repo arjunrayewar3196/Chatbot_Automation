@@ -7,11 +7,11 @@ import json
 
 from telegram.bot import Bot 
 
-bot = telegram.Bot(token='5923635818:AAFsDcVUx60nuzx6wHiDUJzst5F0xbwpdB0') #Replace TOKEN with your token string
+bot = telegram.Bot(token='6195528741:AAG_HGr-JJ8I3jQ2hcHFqwCCEy60zfprB3Q') #Replace TOKEN with your token string
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-updater = Updater(token='5923635818:AAFsDcVUx60nuzx6wHiDUJzst5F0xbwpdB0', use_context=True) #Replace TOKEN with your token string
+updater = Updater(token='6195528741:AAG_HGr-JJ8I3jQ2hcHFqwCCEy60zfprB3Q', use_context=True) #Replace TOKEN with your token string
 dispatcher = updater.dispatcher
 
 
@@ -60,7 +60,7 @@ dispatcher.add_handler(electronic_summary_handler)
 def fnc1(update, context):
     bot.send_message(
         chat_id=update.effective_chat.id,
-        text="Welcome to the www.praveensingampalli.com ",
+        text="Welcome to the www.arjunrayewar.com ",
         )
 start_value2=CommandHandler('start', fnc1)
 dispatcher.add_handler (start_value2)
@@ -69,7 +69,7 @@ dispatcher.add_handler (start_value2)
 def fnc2(update, context):
     bot.send_message(
         chat_id=update.effective_chat.id,
-        text="tutorial link: wwww.youtube.com/praveensingampalli ",
+        text="tutorial link: wwww.arjunrayewarsites ",
         )
 start_value=CommandHandler('youtube', fnc2)
 dispatcher.add_handler (start_value)
